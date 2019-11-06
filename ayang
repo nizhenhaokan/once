@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }    
+        .dd{
+            margin-left: 450px;
+            position: relative;
+        }
+        .d1,.d2,.d3{
+            width: 400px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-items:center;
+            justify-content: space-around;
+            background-color:mediumslateblue;           
+        }
+        .d1{
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+        .d2{
+            position:absolute;
+            background-color: darkturquoise;
+            top: 0;
+            left: 0;
+        }
+        .d3{
+            background-color: darkturquoise;
+        }
+        p{
+            color:lime;
+            font-size: 30px;
+            text-align: center;
+        }
+        .d1>p{
+            color:yellow;
+            
+        }       
+      
+    </style>
+</head>
+<body>
+    <div class="dd">
+        <div class="d1">
+    
+            <p>像</p>
+            <p>风</p>
+            <p>走</p>
+            <p>了</p>
+            <p>八</p>
+            <p>万</p>
+            <p>里</p>
+        </div>
+        <div class="d2">
+            <p>我</p>
+            <p>一</p>
+            <p>直</p>
+            <p>喜</p>
+            <p>欢</p>
+            <p>你</p>           
+        </div>       
+        <div class="d3">           
+            <p>不</p>
+            <p>问</p>
+            <p>归</p>
+            <p>期</p>
+        </div>      
+    </div>
+
+    <script src="./jquery-1.7.2.min.js"></script>
+    <script>
+        $(function(){
+            $('.d2').click(function(){
+                $('.d2').fadeOut(3000)
+                console.log(5); 
+            })
+            $('.d1').click(function(){
+                $('.d1').fadeOut(3000)
+                console.log(5); 
+            })           
+        })
+    </script>
+</body>
+</html>
